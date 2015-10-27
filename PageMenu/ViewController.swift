@@ -18,6 +18,48 @@ class ViewController: UIViewController, UIPageViewControllerDataSource, UIScroll
     var isDraggingRight = true
     var pageViewController: UIPageViewController?
     
+    
+    @IBAction func firstButtonPressed(sender: UIButton) {
+        if currentPage == 0 {
+            return
+        }
+        var animationDirection: UIPageViewControllerNavigationDirection = .Forward
+        if currentPage > 0 {
+            animationDirection = .Reverse
+        }
+        pageViewController?.setViewControllers([(self.storyboard?.instantiateViewControllerWithIdentifier("FirstViewController"))!], direction: animationDirection, animated: true, completion: nil)
+        currentPage = 0
+        setCurrentIndex(0)
+    }
+    
+    @IBAction func secondButtonPressed(sender: UIButton) {
+        if currentPage == 1 {
+            return
+        }
+        var animationDirection: UIPageViewControllerNavigationDirection = .Forward
+        if currentPage > 1 {
+            animationDirection = .Reverse
+        } else {
+            animationDirection = .Forward
+        }
+        pageViewController?.setViewControllers([(self.storyboard?.instantiateViewControllerWithIdentifier("SecondViewController"))!], direction: animationDirection, animated: true, completion: nil)
+        currentPage = 1
+        setCurrentIndex(1)
+    }
+    
+    @IBAction func thirdButtonPressed(sender: UIButton) {
+        if currentPage == 2 {
+            return
+        }
+        var animationDirection: UIPageViewControllerNavigationDirection = .Forward
+        if currentPage < 2 {
+            animationDirection = .Forward
+        }
+        pageViewController?.setViewControllers([(self.storyboard?.instantiateViewControllerWithIdentifier("ThirdViewController"))!], direction: animationDirection, animated: true, completion: nil)
+        currentPage = 2
+        setCurrentIndex(2)
+    }
+    
     override func prefersStatusBarHidden() -> Bool {
         return true
     }
@@ -43,14 +85,23 @@ class ViewController: UIViewController, UIPageViewControllerDataSource, UIScroll
     
     func setCurrentIndex(index: Int) {
         if index == 0 {
+            firstButton.enabled = false
+            secondButton.enabled = true
+            thirdButton.enabled = true
             firstButton.backgroundColor = .whiteColor()
             secondButton.backgroundColor = .clearColor()
             thirdButton.backgroundColor = .clearColor()
         } else if index == 1 {
+            firstButton.enabled = true
+            secondButton.enabled = false
+            thirdButton.enabled = true
             firstButton.backgroundColor = .clearColor()
             secondButton.backgroundColor = .whiteColor()
             thirdButton.backgroundColor = .clearColor()
         } else if index == 2 {
+            firstButton.enabled = true
+            secondButton.enabled = true
+            thirdButton.enabled = false
             firstButton.backgroundColor = .clearColor()
             secondButton.backgroundColor = .clearColor()
             thirdButton.backgroundColor = .whiteColor()
@@ -119,6 +170,8 @@ class ViewController: UIViewController, UIPageViewControllerDataSource, UIScroll
             }
         }
     }
+    
+    
 
 }
 
