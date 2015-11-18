@@ -76,7 +76,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="389" y="354"/>
+            <point key="canvasLocation" x="853" y="163"/>
         </scene>
         <!--Page View Controller-->
         <scene sceneID="wLe-95-ZHH">
@@ -84,7 +84,7 @@
                 <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="HbQ-ql-ExE" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7D9-db-pRZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1096" y="376"/>
+            <point key="canvasLocation" x="1540" y="163"/>
         </scene>
         <!--First View Controller-->
         <scene sceneID="Abd-kk-LvA">
@@ -102,12 +102,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="200"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="FHC-Ph-2LC" firstAttribute="centerX" secondItem="K6o-cU-rTF" secondAttribute="centerX" id="ZL5-ot-No7"/>
                             <constraint firstItem="FHC-Ph-2LC" firstAttribute="height" secondItem="K6o-cU-rTF" secondAttribute="height" id="iT4-Yb-03K"/>
@@ -118,7 +118,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lh9-WS-S9d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2016" y="-64"/>
+            <point key="canvasLocation" x="2020" y="-185"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="N1s-1p-56q">
@@ -136,12 +136,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="200"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="zCI-B8-Hl5" firstAttribute="width" secondItem="1Ih-w3-GUi" secondAttribute="width" id="OaY-Me-agk"/>
                             <constraint firstItem="zCI-B8-Hl5" firstAttribute="centerX" secondItem="1Ih-w3-GUi" secondAttribute="centerX" id="UTY-DS-7hf"/>
@@ -152,7 +152,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Seg-U5-ya8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2394" y="375"/>
+            <point key="canvasLocation" x="2306" y="304"/>
         </scene>
         <!--Third View Controller-->
         <scene sceneID="qCz-7L-nYj">
@@ -170,12 +170,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="200"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="pqt-o5-yBj" firstAttribute="width" secondItem="OsX-OQ-lKv" secondAttribute="width" id="6xr-ld-nuV"/>
                             <constraint firstItem="pqt-o5-yBj" firstAttribute="centerY" secondItem="OsX-OQ-lKv" secondAttribute="centerY" id="VzD-UN-3W7"/>
@@ -186,7 +186,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rxA-GT-5Sy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1958" y="663"/>
+            <point key="canvasLocation" x="2028" y="516"/>
         </scene>
     </scenes>
 </document>

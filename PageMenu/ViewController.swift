@@ -17,6 +17,7 @@ class ViewController: UIViewController, UIPageViewControllerDataSource, UIScroll
     var currentPage = 0
     var isDraggingRight = true
     var pageViewController: UIPageViewController?
+    var pageControl: UIPageControl?
     
     
     @IBAction func firstButtonPressed(sender: UIButton) {
@@ -79,11 +80,29 @@ class ViewController: UIViewController, UIPageViewControllerDataSource, UIScroll
         pageViewController?.view.frame = CGRect(x: 0, y: 30, width: self.view.frame.width, height: self.view.frame.height - 30)
         self.addChildViewController(pageViewController!)
         self.view.addSubview((pageViewController?.view)!)
+        
+        
+        pageControl = UIPageControl(frame: CGRect(x: self.view.frame.width / 2 - 20, y: self.view.frame.height - 30, width: 40, height: 30))
+        pageControl!.numberOfPages = 3
+        pageControl!.currentPage = 0
+        pageControl?.addTarget(self, action: "pageAction", forControlEvents: .ValueChanged)
+        self.view.addSubview(pageControl!)
         setCurrentIndex(0)
         // Do any additional setup after loading the view, typically from a nib.
     }
     
+    func pageAction () {
+        let lastPage = currentPage
+        let newPage = pageControl!.currentPage
+        
+        if lastPage == currentPage {
+            return
+        }
+        print("last: \(lastPage) current: \(newPage)")
+    }
+    
     func setCurrentIndex(index: Int) {
+        pageControl?.currentPage = index
         if index == 0 {
             firstButton.enabled = false
             secondButton.enabled = true
